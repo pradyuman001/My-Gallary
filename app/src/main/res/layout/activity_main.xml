@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.MainActivity">
+
+    <ImageSwitcher
+        android:id="@+id/image_switcher"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <Button
+        android:id="@+id/previous"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_switcher"
+        android:layout_marginTop="20dp"
+        android:text="Previous" />
+
+    <!--click here to view next image-->
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/previous"
+        android:layout_marginTop="20dp"
+        android:text="Next" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_below="@+id/next"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp" />
+
+</RelativeLayout>
